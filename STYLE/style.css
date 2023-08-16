@@ -1,0 +1,373 @@
+/* CSS RESET to dump browser defaults or Normalize this sets as same choose one */
+   /* Kevin Powell canada youtube css master fonts.google.co  MDN developer.mozilla.com*/
+/* CSS can be in line offline or embeded  VIDEO@11min and 22 25 *28minCanvas min DAY7 was working test.js and css*/
+
+*{
+margin: 0;
+padding: 0;
+font-size: 100%;
+box-sizing: border-box;        /* makes border part of width, margins bigger buttons?*/
+}
+header, nav, main, section, article, footer{
+    display:space-evenly;      /*this gets rid of all spacing u can adjust */
+}
+/* Global Styles */
+body{
+    text-align: center;
+    background-color: black;
+    font-family: "Oswald", sans-serif;
+}
+  
+/* Header styles coolors.co */
+header{
+    /* second font-family goes here  */
+    /*background-color: rgb(45, 45, 46);*/
+    color: rgb(115, 115, 119);
+    font-size: 1.3rem;
+    padding: 0rem .4rem;
+    text-shadow: 0.2rem 0.2rem 0.5rem black;
+}
+header h2{     /*this only effects h2 in header also font-weight here or reset*/
+    font-size: 1.2rem;
+    color: rgb(139, 138, 138); 
+    
+}
+header h5{
+    font-size: .9rem;
+}
+
+video{
+    width: 80%
+}
+
+
+#webImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+width: 80%;
+}
+
+
+/* Nav styles  .nav-bar is container */
+
+ul{
+    list-style-type: none;
+    
+}
+nav{
+    background-color: rgb(67, 68, 68);
+}
+.nav-bar{
+    display: flex;
+    /*justify-content:center; */
+  
+}
+.nav-item{
+     flex:1; 
+    margin: 0 0.1rem;  
+    /* display:none;  */
+  } /**/
+    /*flex:1;
+
+
+    }
+   /* use margin with center abv OR width below with spaceevenly*/ 
+   /* or set .nav-item to flex:1; and delete margin justify:space-evenly */
+
+
+.link-item {
+    width: 100%;
+    color:rgb(245, 97, 39);
+    text-decoration:none;
+    font-size: 1.2rem;
+    display:block;
+    padding-left: 2em; 
+ 
+   
+    /* padding makes button bigger, always chang siz contnt padding brdr margin  */
+}
+.link-item:hover,
+.link-item:focus {
+  color: white; 
+}
+.mobile-menu-button{
+ display:none;
+}
+
+
+ /*Main Styles     padding line 81  may not be needed*/
+ body{
+         font-size: 1.2rem;
+         color: rgb(255, 158, 158);
+     }
+
+main{
+    background-color: black;
+    margin: 0rem 0;
+    padding: 0 1rem;
+}
+
+section h2{
+    font-size: 1.2rem;
+    color: rgb(270, 169, 169);
+    /*text-shadow: 0.2rem 0.2rem 0.2rem black;*/
+ 
+}
+/* h3 inside sections would go here would go here cssgridgarden codepen cssbattle csstrcis flexboxfroggy glitch.com */
+/* any block element or container can have border-radius */
+img{
+    border-radius: 0.5rem;
+}
+.Screen-section {
+    /* background-color: rgb(15, 15, 19); */
+    color: rgb(240, 106, 17);
+    font-size: 6rem;
+    padding: 1rem;
+    margin: 1rem 5%;
+    border-radius: 0rem;
+}
+.Page-section{
+    /*background-color: rgb(175, 186, 201);*/
+    color: rgb(91, 99, 126);
+    font-size: 1rem;
+    padding: 2rem;
+    margin: 1rem 5%;
+    /* box-shadow: 0.5rem 0.5rem 2rem black; */
+}
+.Stage-section{
+    /*background-color: rgb(75, 68, 82);*/
+    color:rgb(91, 108, 108);
+    font-size:1rem;
+    padding: 2rem;
+    margin: 1rem 5%;
+}
+article p{
+    margin: 1rem 0;
+}
+.flex-container{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.left-flex-element,
+.right-flex-element{
+    padding: 1rem 2rem;
+    flex:1;
+    
+}
+.flex-reverse{
+    flex-direction: row-reverse;
+}
+/* Table Styles  always go broad to specific paddng table. I have no tables */
+/*table{
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+  th,td {
+    padding: 2rem 0; 
+    }
+    caption{
+        font-size: 1.2rem;
+    }
+th{
+    background-color: royalblue;
+    color: blanchedalmond;
+    }
+    tr:nth-child(even){
+        color: red;
+        background-color: azure;
+    }
+    tr:nth-child(odd){
+        color: green;
+        background-color: greenyellow;
+    }
+    th:first-child,
+    td:first-child {
+        text-align: left;
+        width:90%;
+    }
+
+
+
+/* footer styles*/
+footer{
+    background-color: rgb(42, 42, 54);
+    color: rgb(123, 123, 167);
+    padding:1rem 5rem;
+    font-size: 1.1rem;
+}
+
+/* Media Queries DAY 7 @ 1.22- only need to reset things to change for screen size. 
+Go smallest to biggest Mobile tablet desktop (MobileFirstDesign! (min-width:next size up going to larger screens in Media querie)but this is backwards -large to smallest. 
+(always add 1px)Default is all above which loads(here desktop)do mq 4 laptop, tablet mobile
+After you set size in media queries code (always very bottom page) - ( set device emulation - click tab -then change css */
+/* below media query for screen size. always add 1 px to default. D7@1.26 */
+
+/*@media screen and (max-width:1606px)
+@media screen and (max-width:769px) added one  ADJUST SCREEN SIZE HERE?*/
+
+
+@media screen and (max-width:426px) {
+    h1{
+        font-size: 1.3rem;
+    }
+    header h2{
+        font-size: .8rem;
+    }
+    .nav-bar{
+        flex-direction: column;
+     }
+        .nav-item {
+            display: none;
+        }
+       .visible{
+            display: block;
+        } 
+        /*challenge answer code change (also see HTML l21) change l 200 to:   .visible .nav-item{ display:block;
+this says any nav-item thats inside an element with a visible class 
+(<ul> nav-bar <ul> in html, we can turn display to block. <ul> is parent. in js change media query navItem to nav-bar 
+in If statements. Line 9, 12 18  and dump for loops.*/
+
+
+
+    .link-item {
+        /* display: none; */
+         font-size: 1.2rem;
+    }
+.mobile-menu-button{
+    display: flex;
+    flex-direction:row;
+    color:rgb(206, 100, 13);
+    justify-content: space-between;
+}
+/* he has no line 201  so maybe visible line 197 belongs up top ?*/
+.mobile-menu-heading{
+    /* background-color: azure;  he removed*/
+    padding: 0 3rem;
+   
+}
+.mobile-menu-toggle{
+    /* background-color: he removed */
+    padding: 0 3rem;
+}
+footer{
+    padding: .5rem 2rem;
+    font-size: .6rem;
+}
+}
+
+@media screen and (max-width:1024px) {
+    h1{
+        font-size: 1.3rem;
+    }
+    header h2{
+        font-size: .8rem;
+    }
+    .nav-bar{
+        flex-direction: column;
+     }
+        .nav-item {
+            display: none;
+        }
+       .visible{
+            display: block;
+        } 
+        /*challenge answer code change (also see HTML l21) change l 200 to:   .visible .nav-item{ display:block;
+this says any nav-item thats inside an element with a visible class 
+(<ul> nav-bar <ul> in html, we can turn display to block. <ul> is parent. in js change media query navItem to nav-bar 
+in If statements. Line 9, 12 18  and dump for loops.*/
+
+
+
+    .link-item {
+        /* display: none; */
+         font-size: 1.2rem;
+    }
+.mobile-menu-button{
+    display: flex;
+    flex-direction:row;
+    color:rgb(0, 0, 40);
+    justify-content: space-between;
+}
+/* he has no line 201  so maybe visible line 197 belongs up top ?*/
+.mobile-menu-heading{
+    /* background-color: azure;  he removed*/
+    padding: 0 3rem;
+   
+}
+.mobile-menu-toggle{
+    /* background-color: he removed */
+    padding: 0 3rem;
+}
+footer{
+    padding: .5rem 2rem;
+    font-size: .6rem;
+}
+
+
+}
+
+/* media queries: tv(4k) desktop (1080),laptop,tablet,mobile , choose largest of each screen type plus 1 
+On modertn web page because of popularity, the default css is for mobile devices and Media Queries go for larger devices
+ to make it look good on a desktop. @media screen and (min-width:desktoppx){  set querie for each size mobile(defalt) then tablet desktop.
+    adjust footer(smaller) header margin flex item to column? image on top article underneath .
+   Need to get a git-hub account and Cloud Flare host */
+
+   @media screen and (min-width:320px) and (max-width:480px) {
+
+    body{
+        background-color: black;
+    }
+    h1{
+        font-size: 1.3rem;
+        color: pink
+    }
+    header h2{
+        font-size: .8rem;
+    }
+    .nav-bar{
+        flex-direction: column;
+     }
+        .nav-item {
+            display: none;
+        }
+       .visible{
+            display: block;
+        } 
+        /*challenge answer code change (also see HTML l21) change l 200 to:   .visible .nav-item{ display:block;
+this says any nav-item thats inside an element with a visible class 
+(<ul> nav-bar <ul> in html, we can turn display to block. <ul> is parent. in js change media query navItem to nav-bar 
+in If statements. Line 9, 12 18  and dump for loops.*/
+
+
+
+    .link-item {
+        /* display: none; */
+         font-size: 1.2rem;
+    }
+.mobile-menu-button{
+    display: flex;
+    flex-direction:row;
+    color:rgb(0, 0, 40);
+    justify-content: space-between;
+}
+/* he has no line 201  so maybe visible line 197 belongs up top ?*/
+.mobile-menu-heading{
+    /* background-color: azure;  he removed*/
+    padding: 0 3rem;
+   
+}
+.mobile-menu-toggle{
+    /* background-color: he removed */
+    padding: 0 3rem;
+}
+footer{
+    padding: .5rem 2rem;
+    font-size: .6rem;
+}
+
+
+
+}
